@@ -1,0 +1,47 @@
+<button class="btn btn-danger"routerLink="/another">Route_1</button>
+<button class="btn btn-primary"routerLink="/first">Route_2</button>
+<router-outlet></router-outlet>
+<!-- <div>
+    <span class="name">{{title}}</span>            
+</div> -->
+
+<div class="container">
+      <table *ngIf = execute class="table table-primary">
+         <tr *ngFor = 'let f of data'>
+             <td>{{f.nom }}</td>
+             <td>{{f.prenom}}</td>
+             <td>{{f.age }}</td>
+         </tr>
+     </table>
+</div>
+{{ title }}
+
+	<p>
+		Hello 
+		Directive is not applied on me !
+	</p>
+
+<div appBgcolor>
+	<p>
+		Hello 
+		Directive is applied on me !
+	</p>
+</div>
+
+<div class="btn-group btn-group-toggle">
+	  	 <label class="btn-primary" ngbButtonLabel>
+	   		 <input type="checkbox" ngbButton [(ngModel)]="model.left"> Left (pre-checked)
+	    </label>
+	  <label class="btn-primary" ngbButtonLabel>
+	    <input type="checkbox" ngbButton [(ngModel)]="model.middle"> Middle
+	  </label>
+	  <label class="btn-primary" ngbButtonLabel>
+	    <input type="checkbox" ngbButton [(ngModel)]="model.right"> Right
+	  </label>
+	</div>
+
+	<p>The hero's birthday is {{ birthday | date }}</p>
+
+	
+<app-first></app-first>
+

@@ -1,0 +1,35 @@
+<div class="autre">
+	<p>First works!</p>
+</div>
+
+Entrez un number : <input type="number" placeholder="number 1" 
+[(ngModel)]="num1"> <br/>
+
+Entrez un number : <input type="number" placeholder="number 2" 
+[(ngModel)]="num2"> <br/>
+
+<p class="addition">
+<!--  Le resultat  de  {{ num1 }} + {{ num2 }} est de : {{ resultat }}
+</p> --><br/>
+{{ resultat }}<br/>
+<button class="btn btn-success text-center"[style.height.px]
+ = 'height'(click)="add()">Additionner</button> <br/> <br/> 
+
+ <input type="text" [(ngModel)] = "nameValue" /><br/>
+ {{nameValue}}<br/>
+
+ <form #form="ngForm" (ngSubmit)='save(form)'>
+ 	
+ 	<input class='form-control'type="text" required  minlength="5" maxlength="5"><br>
+ 	<button class="btn btn-success"> Submit</button>
+ </form>
+   {{form | json }}
+   {{form.value |json }}
+
+   
+
+		
+<hr>
+<pre>{{model | json}}</pre>
+
+
